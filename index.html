@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      src="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FIDA QIUZ PROGRAM</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form id="submit-form" action="" class="sign-in-form">
+            <h2 class="title">ANSWER </h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name " placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-mobile"></i>
+              <input type="text" name="Mobile Number" placeholder="Mobile Number" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-voicemail"></i>
+              <input type="text" name="ANSWER " placeholder="ANSWER" />
+            </div>
+            <input type="submit" value="SAND" class="btn solid" />
+            <p class="social-text">സഹായത്തിനു വേണ്ടി ഇവിടെ
+               ബന്ധപ്പെട്ടുക</p>
+            <div class="social-media">
+             
+              </a>
+              <a href="https://t.me/joinchat/7OYt1MTzgtVkMjU1" class="social-icon">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="https://www.instagram.com/fida_diu?r=nametag" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              
+              </a>
+            </div>
+            <p class="m-0">&copy; | Design by <a href="https://t.me/Shibinshapk">Shibinsha</a></p>
+            
+          </form>
+          <form id="submit-form" action="#" class="sign-up-form">
+            <h2 class="title">ANSWER HERE</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+            </a>
+            <a href="https://t.me/joinchat/7OYt1MTzgtVkMjU1" class="social-icon">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="https://www.instagram.com/fida_diu?r=nametag" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <p class="social-text"><b><u>FIDA QUIZ PROGRAM</u></b></p>
+            <h3>Question</h3>
+            <p>
+              വിനോദങ്ങൾ വിഷാദത്തിലേക്ക് വഴി വെക്കുന്നുവോ...!
+              കളിച്ചു ചിരിച്ചു പഠിച്ച് വളരേണ്ട കുട്ടികൾ പരസ്പരം 
+               തമ്മിലടിക്കുന്ന ജീവനപഹരിക്കുന്ന ജീവനൊടുക്കുന്ന  
+               അവസ്ഥക്ക് അറുതി വരുത്തേണ്ടേ ....
+            </p>
+            
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Question</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              SAND
+            </button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbzDQVYHoWvDPRBYpn0A3bikCDK9TEWBNF9oSSzQ6DlK4zRaE2S72ljfhHpvFCNAvWhT/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
