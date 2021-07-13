@@ -115,7 +115,8 @@
               method:"post",
               success:function (response){
                   swal("Good job!", "നിങ്ങളുടെ ഉത്തരം നങ്ങൾക്ക്  ലഭിച്ചു ", "success");
-                  window.location.reload()
+                  setInterval('location.reload()', 10000);
+                  //window.location.reload()
                   //window.location.href="https://t.me/joinchat/7OYt1MTzgtVkMjU1"
               },
               error:function (err){
